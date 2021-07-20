@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentHomePage">
+
+    <EditText
+        android:id="@+id/s_hostel_name"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="184dp"
+        android:ems="10"
+        android:hint="Hostel Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/s_room_no"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Room No."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_hostel_name" />
+
+    <Button
+        android:id="@+id/s_check"
+        android:layout_width="117dp"
+        android:layout_height="42dp"
+        android:background="#19e9f7"
+        android:text="Check"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_room_no"
+        app:layout_constraintVertical_bias="0.16" />
+
+    <Button
+        android:id="@+id/s_collected"
+        android:layout_width="117dp"
+        android:layout_height="30dp"
+        android:background="#19e9f7"
+        android:text="Collected?"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/s_get_details"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_check"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <Button
+        android:id="@+id/s_get_details"
+        android:layout_width="117dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="68dp"
+        android:background="#19e9f7"
+        android:text="Get Details"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/s_check"
+        app:layout_constraintVertical_bias="0.184" />
+</androidx.constraintlayout.widget.ConstraintLayout>
